@@ -1,0 +1,68 @@
+.zoomCurtainbg {
+    display: block;
+    content: "";
+    position: fixed;
+    z-index: 999;
+    width: 1000px;
+    height: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #313131;
+    animation-name: circleZoomOut;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    border-radius: 9999px;
+}
+
+@keyframes circleZoomOut {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    50% {
+        opacity: 1
+    }
+    90% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.1);
+    }
+}
+
+.fadeout {
+  animation : fadeOut 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#container{
+	opacity: 0;
+}
+
+body.pageOn #container{
+	animation-name:PageAnimeOn;
+	animation-duration:1s;
+	animation-delay: 0.8s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+@keyframes PageAnimeOn{
+	0% {
+	opacity: 0;
+	}
+	100% {
+	opacity: 1;
+}
+}

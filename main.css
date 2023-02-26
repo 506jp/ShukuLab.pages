@@ -1,5 +1,10 @@
+body {
+  margin: 0;
+}
+
 /*表題*/
 h2 {
+  margin: 0;
   position: relative;
   font-size: 8rem;
   text-align: center;
@@ -51,57 +56,51 @@ p.textTitle {
 }
 
 /* 画像のスクロールCSS */
+.img{
+  text-align: center;
+  width: 300px;
+  height: 200px;
+
+}
+
 .fade-in {
-    text-align: center;
-    opacity: 0;
-    margin: auto;
-    transition-duration: 500ms;
-    transition-property: opacity, transform;
-  }
+  opacity: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, transform;
+}
+
+.fade-in-up {
+  transform: translate(0, 50px);
+}
+
+.fade-in-down {
+  transform: translate(0, -50px);
+}
+
+.fade-in-left {
+  transform: translate(-50px, 0);
+}
+
+.fade-in-right {
+  transform: translate(50px, 0);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.googleform-wrapper {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow-y: scroll;
+}
   
-  .fade-in-up {
-    text-align: center;
-    opacity: 0;
-    transition-duration: 500ms;
-    transform: translate(0, 50px);
-  }
-  
-  .fade-in-down {
-    text-align: center;
-    opacity: 0;
-    transition-duration: 500ms;
-    transform: translate(0, -50px);
-  }
-  
-  .fade-in-left {
-    text-align: center;
-    opacity: 0;
-    transition-duration: 500ms;
-    transform: translate(-50px, 0);
-  }
-  
-  .fade-in-right {
-    text-align: center;
-    opacity: 0;
-    transition-duration: 500ms;
-    transform: translate(50px, 0);
-  }
-  
-  .scroll-in {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-  .googleform-wrapper {
-    position: relative;
-    width: 100%;
-    height: 800px;
-    overflow-y: scroll;
-  }
-  
-  .googleform-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+.googleform-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

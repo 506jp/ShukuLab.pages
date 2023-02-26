@@ -1,4 +1,4 @@
- //文字のタイピング風表示
+//文字のタイピング風表示
  const doObserve = (element) => {
     const targets = document.querySelectorAll('.typeWriter'); /* ターゲットの指定 */
     const options = {
