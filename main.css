@@ -1,10 +1,25 @@
-/*表題の中央揃え*/
-  .center-marginwrap{
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    color: #25e913;
+/*表題*/
+h2 {
+  position: relative;
+  font-size: 8rem;
+  text-align: center;
+  padding: 1rem .5rem;
+  color: #fff;
 }
+
+h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(20deg, yellow, blue, orange, purple, green, red);
+  background-image: linear-gradient(70deg, yellow, blue, orange, purple, green, red);
+}
+
+/* */
 
 /*文字をタイピング風に入れる場所*/
 p.textTitle {
@@ -13,12 +28,12 @@ p.textTitle {
     font-weight: 600;
     letter-spacing: 0.08rem;
     margin-bottom: 0;
-    color: #25e913;
+    color: #fff;
 }
 
 .typeWriter {
   font-size: 1.2rem;
-  color: #25e913;
+  color: #fff;
   text-align: center;
   margin: 0 !important;
   min-height: 120px;
