@@ -1,21 +1,3 @@
-// MENUオーバーレイ表示
-document.getElementById('drawerOpen').addEventListener('click', () => {
-    document.getElementById("drawerNavi").style.height = "100%";
-  });
-  
-  // Xをクリックでオーバーレイ非表示
-  document.getElementById('drawerClose').addEventListener('click', () => {
-    document.getElementById("drawerNavi").style.height = "0%";
-  });
-  
-  //ドロワーのメニューをクリックしたらオーバーレイ非表示
-  const hrefLink = document.querySelectorAll('.overlay-content li');
-  for (i = 0; i < hrefLink.length; i++) {
-  hrefLink[i].addEventListener("click", () => {
-  document.getElementById("drawerNavi").style.height = "0%";
-  });
-  }
-
  //文字のタイピング風表示
  const doObserve = (element) => {
     const targets = document.querySelectorAll('.typeWriter'); /* ターゲットの指定 */
