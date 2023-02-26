@@ -20,7 +20,7 @@
 /* 子要素のテキスト */
 .flObj p {
     margin: 0;
-    background: #FFF;
+    background: rgb(34, 80, 206);
     padding: 12px 20px 11px;
     font-size: 0.9rem;
     border-radius: 3px;
@@ -34,13 +34,13 @@
     left: 100%;
     margin-top: -10px;
     border: 10px solid transparent;
-    border-left: 10px solid #FFF;
+    border-left: 10px solid #6bb6ff;
 }
 /* 子要素のリンク */
 .flObj a {
     background: #6bb6ff;
-    width: 54px;
-    height: 54px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +70,7 @@
     transform: translate(-50%, -50%);
     font-family: "Font Awesome 5 Free" !important;
     font-weight: 900;
-    color: #FFF;
+    color: #6bb6ff;
 }
 /* クリック後の親要素 */
 #floatingMenu.notshow {
@@ -79,7 +79,7 @@
 /* クリック前の各メニュー */
 div#floatingMenu.notshow > .flObj.top, div#floatingMenu.notshow > .flObj.middle {
     gap: 0;
-    margin-bottom: -54px;
+    margin-bottom: -100px;
 }
 /* クリック前のテキスト */
 div#floatingMenu.notshow > .flObj.top p, div#floatingMenu.notshow > .flObj.middle p {
