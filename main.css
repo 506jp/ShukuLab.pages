@@ -1,12 +1,11 @@
 body{
   margin: 0;
-  position: relative;
+  background-color: black;
 }
 
 #geometryBlock{
-  width: 100%;
-  height: 100vh;
-  position: fixed;
+  width: auto;
+  height: auto;
   top: 0;
   left: 0;
   z-index: 1; 
@@ -48,7 +47,7 @@ p.textTitle {
 }
 
 .typeWriter {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #fff;
   text-align: center;
   margin: 0 !important;

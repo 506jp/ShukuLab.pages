@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 <body>
-    <div id="geometryBlock">
+  <div id="geometryBlock">
     <div id="page-loading" class="fadein">
             <div class="three-balls">
               <div class="ball ball1"></div>
@@ -52,6 +52,41 @@
         </div>
         </div>
       </section>
+      
+      <h3>教材について</h3>
+        <section class="someTabs" data-tabs="">
+        <nav class="tabs__nav">
+          <a href="#" class="tabs__item active" data-tab="">その１</a>
+          <a href="#" class="tabs__item" data-tab="">その２</a>
+          <a href="#" class="tabs__item" data-tab="">その３</a>
+          <a class="Tabs__presentation-slider" role="presentation"></a>
+        </nav>
+        <div class="tabs__body">
+          <div class="tabs__content active" data-tab-content="">
+            <p><h1>Shukutokuオリジナル教材！</h1></p>
+            <p>
+                <li>淑徳生目線でわかりやすい教材を提供します。</li>
+                <li>知識の詰め込みではなく、実際に作成して理解していく教材です！</li>
+            </p>
+        </div>
+        <div class="tabs__content" data-tab-content="">
+            <p><h1>gather</h1></p>
+            <p>
+                <li>オンラインルームサービスです！</li>
+                <li>モクモク作業もよし！談話もよし！質問もおっけい！そんな活用場です〜</li>
+                <br>詳しくは下記URLよりご参照ください。
+                <li><a href="https://lab.parque.io/details/62209fb91ae440cc90bdcf50936a0119#29be7be787bc476aac8a7ea00898057b">Gather</a></li>
+            </p>
+        </div>
+        <div class="tabs__content" data-tab-content="">
+            <p><h1>質問し放題！</h1></p>
+            <p>
+              <li>GatherやSlack（もしくはDiscord）を用いて質問がし放題です！</li>
+              <li>プログラミング意外にも不明点を一緒に解決していきましょう！</li>
+            </p>
+        </div>
+        </div>
+      </section>
       <div id="floatingMenu" class="notshow">
         <div class="flObj top">
           <p>TOP</p>
@@ -72,24 +107,11 @@
         <div id="flObgToggle" class="flObj bottom">
           <a></a>
         </div>
-      </div>   
-    </div>
+      </div>  
+  </div>
     <script src="curriculum.js"></script>
     <script src="reload.js"></script>
     <script src="menu.js"></script>
-    <script>
-        VANTA.NET({
-          el: "#geometryBlock",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 1000.00,
-          minWidth: 1000.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0x3f8eff,
-          backgroundColor: 0x0
-        })
-    </script>
+    <script src="back.js"></script>
 </body>
 </html>

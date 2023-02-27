@@ -36,11 +36,11 @@
     border: 10px solid transparent;
     border-left: 10px solid #6bb6ff;
 }
-/* 子要素のリンク */
+/* 子要素のリンク アイコンの大きさもここ */
 .flObj a {
     background: #6bb6ff;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,10 +76,10 @@
 #floatingMenu.notshow {
     gap: 0;
 }
-/* クリック前の各メニュー */
+/* クリック前の各メニュー　アイコンの大きさ変更後はここも変える */
 div#floatingMenu.notshow > .flObj.top, div#floatingMenu.notshow > .flObj.middle {
     gap: 0;
-    margin-bottom: -100px;
+    margin-bottom: -80px;
 }
 /* クリック前のテキスト */
 div#floatingMenu.notshow > .flObj.top p, div#floatingMenu.notshow > .flObj.middle p {
